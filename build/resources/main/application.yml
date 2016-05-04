@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      database: testdb
+      uri: mongodb://localhost:27017
+
+  resources:
+      chain:
+        strategy:
+          content:
+            enabled: true
+            paths: /**

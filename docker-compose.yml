@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - /tmp/data/mongodb:/data/db
+#    ports:
+#     - 27017:27017
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
